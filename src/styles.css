@@ -1,1 +1,294 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+label,
+legend,
+p,
+blockquote,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+:focus {
+  outline: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+blockquote,
+q {
+  quotes: "" "";
+}
+abbr,
+acronym {
+  border: 0;
+}
+
+.my-5 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.my-4 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.my-3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.my-2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-1 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mb-5 {
+  margin-bottom: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 1.5rem;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.mt-1 {
+  margin-top: 0.5rem;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-grow-0 {
+  flex-grow: 1;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-grow-2 {
+  flex-grow: 2;
+}
+
+.flex-grow-3 {
+  flex-grow: 3;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 1;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 2;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 3;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.form-control {
+  padding: 12px 18px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  border: 1px solid hsl(0, 0%, 85%);
+  background-color: hsl(0, 0%, 85%);
+  max-width: 100%;
+}
+
+button {
+  border-radius: 0;
+  border: 1px solid hsl(0, 0%, 85%);
+  cursor: pointer;
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 12px 18px;
+  border-radius: 0;
+  box-shadow: none;
+  border: 1px solid #000;
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-sm {
+  font-size: 0.75rem;
+  padding: 6px 9px;
+}
+
+.btn-primary {
+  border-color: hsl(0, 95%, 75%);
+  background-color: hsl(0, 100%, 60%);
+}
+
+.btn-default {
+  border-color: hsl(0, 0%, 30%);
+  background-color: hsl(0, 0%, 30%);
+}
+
+.btn[disabled] {
+  cursor: not-allowed;
+  border-color: hsl(0, 0%, 35%);
+  background-color: hsl(0, 0%, 35%);
+}

@@ -1,0 +1,23 @@
+.todo-crud__table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: hsl(0, 100%, 85%);
+}
+
+.todo-crud__table thead {
+    background-color: hsl(0, 100%, 75%);
+    color: #fff;
+}
+
+.todo-crud__table tbody tr:nth-child(odd) {
+    background-color: hsl(0, 100%, 95%);
+}
+
+.todo-crud__table th,
+.todo-crud__table td {
+    padding: 12px;
+}
+
+.todo-crud__item--done .todo-crud__item-name {
+    text-decoration: line-through;
+}

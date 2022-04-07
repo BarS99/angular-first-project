@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'First Project';
-  listCount = 0;
+  title: string = 'First Project';
+  listCount:number = 0;
 
-  updateListCount(value: number) {
+  updateListCount(value: number): void {
     this.listCount = value;
   }
 }

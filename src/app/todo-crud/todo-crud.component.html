@@ -2,7 +2,7 @@
     <label for="todo-crud__add" class="mb-1 d-block">
         Add new element
     </label>
-    <form class="d-flex flex-wrap" #todoCrudForm="ngForm" (ngSubmit)="submit()">
+    <form class="d-flex flex-wrap" (ngSubmit)="submit()">
         <input class="form-control flex-grow-1" type="text" id="todo-crud__add" name="todo-crud__add"
             placeholder="Enter new element..." [(ngModel)]="input" />
         <button type="submit" class="btn btn-primary d-block flex-grow-1 flex-shrink-0" [disabled]="!input">

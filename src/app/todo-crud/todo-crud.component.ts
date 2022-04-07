@@ -1,5 +1,4 @@
-import { trigger } from '@angular/animations';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 interface TodoCrudItem {
   name: string,
@@ -15,6 +14,8 @@ export class TodoCrudComponent implements OnInit {
 
   list: TodoCrudItem[] = [];
   input: string = "";
+
+  @Output() listCountEvent = new EventEmitter<number>();
 
   constructor() { }
 
@@ -37,6 +38,7 @@ export class TodoCrudComponent implements OnInit {
         done: false,
       },
     ];
+    this.updateListCount();
   }
 
   submit() {
@@ -45,6 +47,7 @@ export class TodoCrudComponent implements OnInit {
       done: false,
     })
     this.input = "";
+    this.updateListCount();
   }
 
   toggleActive(index: number) {
@@ -55,5 +58,10 @@ export class TodoCrudComponent implements OnInit {
     this.list = this.list.filter((item, i) => {
       return i !== index;
     })
+    this.updateListCount();
+  }
+
+  updateListCount() {
+    this.listCountEvent.emit(this.list.length);
   }
 }

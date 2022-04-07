@@ -1,6 +1,6 @@
 <div class="app">
   <h1 class="h1">
-    {{title}}
+    {{title}} - ({{listCount}} items)
   </h1>
-  <app-todo-crud></app-todo-crud>
+  <app-todo-crud (listCountEvent)="updateListCount($event)"></app-todo-crud>
 </div>

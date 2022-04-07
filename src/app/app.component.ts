@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'First Project';
+  listCount = 0;
+
+  updateListCount(value: number) {
+    this.listCount = value;
+  }
 }
